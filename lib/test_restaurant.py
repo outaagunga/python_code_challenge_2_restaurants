@@ -13,22 +13,22 @@ def test_restaurant_average_star_rating_empty():
 
 # Test Customer class
 def test_customer_given_name():
-    customer = Customer("John", "Doe")
-    assert customer.given_name() == "John"
+    customer = Customer("Outa", "Agunga")
+    assert customer.given_name() == "Outa"
 
 def test_customer_full_name():
-    customer = Customer("Jane", "Smith")
-    assert customer.full_name() == "Jane Smith"
+    customer = Customer("Jocinter", "Adhiambo")
+    assert customer.full_name() == "Jocinter Adhiambo"
 
 def test_customer_num_reviews():
-    customer = Customer("Alice", "Johnson")
+    customer = Customer("Anne", "Adhiambo")
     restaurant = Restaurant("Test Restaurant")
     customer.add_review(restaurant, 4)
     assert customer.num_reviews() == 1
 
 # Test Review class
 def test_review_rating():
-    customer = Customer("Bob", "Brown")
+    customer = Customer("Phillip", "Olela")
     restaurant = Restaurant("Test Restaurant")
     review = Review(customer, restaurant, 3)
     assert review.rating() == 3
