@@ -1,6 +1,7 @@
 from restaurant import Restaurant
 from customer import Customer
 from review import Review
+from pytest import pytest
 
 # Test Restaurant class
 def test_restaurant_name():
